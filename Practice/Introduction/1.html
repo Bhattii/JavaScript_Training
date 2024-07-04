@@ -5,20 +5,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+<style>
+  .container{
+    padding: 20px;
+    background-color: red; 
+    
+   
+   }
+   .relative{
+    padding: 20px;
+    background-color: blue;
+    position: relative;
+    
+   
+  
+   
+    /* top: 200px; */
+  }
+
+  .absolute{
+    padding: 20px;
+    background-color: green;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    
+  }
+  
+  .fixed{
+    padding: 20px;
+    background-color: yellow;
+  }
+  .sticky{
+    padding: 20px;
+    background-color: gray;
+  }
+</style>
 </head>
 
 <body>
-    <img src="https://www.shutterstock.com/shutterstock/photos/2099186383/display_1500/stock-vector-abstract-elegant-diagonal-striped-purple-background-and-black-abstract-dark-2099186383.jpg" alt="girld image">
-    <h1>What can to do JavaScript</h1>
-    <p>JavaScript can change html content</p>
-    <p>JavaScript can change html attribute values</p>
-    <p>JavaScript can change html style</p>
-    <p>JavaScript can hide html element</p>
-    <p>JavaScript can show html element</p>
+   
+  <div class="container">
+    <div class="relative">Relative</div>
+    <div class="absolute">Absolute</div>
+    
+    <div class="fixed">Fixed</div>
+    <div class="sticky">Sticky</div>
+  </div>
+  
+<!-- <div>block element</div>
+<div>block element</div>
+<span>span Element</span>
+<span>span Element</span>
+<span>span Element</span> -->
 
-    <script>
-        document.write("<h1>hello world</h1>")
-    </script>
+
+
 </body>
 
 </html>

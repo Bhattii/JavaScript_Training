@@ -7,33 +7,21 @@
     <title>Document</title>
 </head>
 <body>
-    <p id="demo"></p>
+   
     <script>
-// Creating Object 
-        const person = new Object();
-// Add Properties 
-        person.firstname = "Muhammad";
-        person.lastname = "Imran";
-        person.age = "24";
-        person.eyeColor = "blue";
 
-// Display Data from Object 
-document.getElementById('demo').innerHTML= person.firstname + person.lastname + " is " + person.age + "years old.";
+        
+
+const cars = ["BMW", "Volvo", "Mini"];
 
 
-// Object Constructor Functions
-function Person(first, last , age , eye){
-    this.firstname=first;
-    this.lastname=last;
-    this.age = age;
-    this.eyeColor=eye;
+
+let text = "";
+for(let x of text){
+    text +=x;
 }
-// Create a Person Object
-const myFather = new Person("Abdul", "Hameed", 50, "blue");
-const myMother = new Person("abc", "abc" ,45 , "blue");
-// Display Age 
-document.getElementById("demo").innerHTML = "My father age is "+ myFather.age;
 
+console.log(text);
     </script>
 </body>
 </html>
