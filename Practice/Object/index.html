@@ -9,19 +9,14 @@
 <body>
    
     <script>
-
-        
-
-const cars = ["BMW", "Volvo", "Mini"];
-
-
-
-let text = "";
-for(let x of text){
-    text +=x;
+const character = "#";
+const count = 8;
+const rows = [];
+for(let i=0; i<count; i++){
+  rows.push(character.repeat(i));
+  document.write(rows + "\n");
 }
 
-console.log(text);
     </script>
 </body>
 </html>
