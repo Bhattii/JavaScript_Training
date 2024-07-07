@@ -6,8 +6,23 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>The Window Object</h1>
+<h2>The confirm() Method</h2>
+
+<p>Click the button to see line-breaks in a confirm box.</p>
+<p id="demo"></p>
+<button onclick="confirmBox()">Try it</button>
    <script>
-    let a = confirm("Do you like our website?");
+    const confirmBox = () => {
+        let text = "Press a button!\nEither Ok or Cancel.";
+        if(confirm(text)==true){
+            text = "You Pressed OK";
+        }
+        else{
+            text="You Canceled";
+        }
+        document.getElementById("demo").innerText = text;
+    }
    </script>
 </body>
 </html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onunload="hello()">
+    
+    <script>
+        let hello = () => {
+            document.write("Hello world");
+        }
+    </script>
+    <h1>Mouse Events</h1>
+    <button onclick="hello()">one click</button><br/><br/>
+    <button ondblclick="hello()">double click</button><br/><br/>
+    <button oncontextmenu="hello()">right click</button><br/><br/>
+    <button onmouseenter="hello()">mouse enter</button><br/><br/>
+    <button onmouseout="hello()">mouse out</button><br/><br/>
+    <button onmousedown="hello()">mouse out</button><br/><br/>
+    <button onmouseup="hello()">mouse up</button><br/><br/>
+    <h1>Keyboard events</h1>
+    <button onkeypress="hello()">key press</button><br/><br/>
+    <button onkeydown="hello()">key down</button><br/><br/>
+    <button onkeyup="hello()">key up</button><br/><br/>
+    <h1>Windows Events</h1>
+    <button onresize="hello()">Resize</button><br/><br/>
+    <button onscroll="hello()">scroll</button><br/><br/>
+    <button onload="hello()">load</button><br/><br/>
+    <button onunload="hello()">unload</button><br/><br/>
+</body>
+</html>
