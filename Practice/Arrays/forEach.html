@@ -9,9 +9,16 @@
     <script>
 
 const arr1 = ["Imran", "Ali", "Ahmed", "Yaseen", "Quaid"];
-arr1.toString();
-document.write(arr1 = "<br>");
-document.write(arr1.fill("imran"));
+
+
+arr1.forEach((value, index)=>{
+document.write(index + " : " + value + "<br>");
+});
+
+
+
+
+
     </script>
 </body>
 </html>

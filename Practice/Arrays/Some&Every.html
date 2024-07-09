@@ -8,10 +8,15 @@
 <body>
     <script>
 
-const arr1 = ["Imran", "Ali", "Ahmed", "Yaseen", "Quaid"];
-arr1.toString();
-document.write(arr1 = "<br>");
-document.write(arr1.fill("imran"));
+const ages = [15,16,17,18,19,20,21,22,23,24,25];
+let b = ages.some(checkAdult);
+document.write(b + "<br>");
+function checkAdult(age){
+    return age>=18;
+}
+let  c= ages.every(checkAdult);
+document.write(c);
+
     </script>
 </body>
 </html>
