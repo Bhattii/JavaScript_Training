@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const arr = [
+            ["imran", 23, "student", "bscs"],
+            ["ali", 24, "student", "bsse"],
+            ["ahmed", 25, "employee", "kfc"],
+            ["ahmed", 25, "employee", "kfc"],
+            ["ahmed", 25, "employee", "kfc"],
+            ["ahmed", 25, "employee", "kfc"],
+            ["ahmed", 25, "employee", "kfc"],
+            ["ahmed", 25, "employee", "kfc"]
+        ]
+        document.write("<table border='1' cellspacing='0' >")
+        for(let a=0; a<arr.length; a++){
+            document.write("<tr>");
+            for(let b=0; b<arr[a].length; b++){
+                document.write("<td style=' padding:15px;    '>")
+                document.write(arr[a][b] + "  ");
+                document.write("</td>")
+            }
+            document.write( "<br>");
+            document.write("</tr>")
+        }
+        document.write("</table>")
+    </script>
+</body>
+</html>
