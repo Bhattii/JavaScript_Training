@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// const person = {
+//   firstName : "John",
+//   lastName : "Doe",
+//   age : 50,
+//   eyeColor : "blue"
+// };
+// document.write(Object.entries(person));
+
+const fruits = {Bananas:300, Oranges:200, Apples:500}; 
+// let text = " ";
+// for ( let [fruit, amount] of Object.entries(fruits)){
+//     text += fruit + ": " + amount + "<br>";
+// }
+// document.write(text);
+
+
+// const myMap = new Map(Object.entries(fruits));
+// document.write(myMap);
+
+const person = {
+  fname:"John",
+  lname:"Doe",
+  age:25
+}; 
+let txt = "";
+for (let x in person) {
+  txt += person[x] + " ";
+}
+document.write(txt);
+    </script>
+</body>
+</html>
