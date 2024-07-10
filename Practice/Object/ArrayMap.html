@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+//  const arr = [11,4,9,16];
+//  document.write(arr.map((x)=>{
+//     return x*10;
+//  }));
+ 
+
+const arr = [
+    {fname: "Muhammad", lname: "Imran", age: 23},
+    {fname: "Usman", lname: "Ali", age: 24},
+    {fname: "Malik", lname: "Yaseen", age: 25},
+];
+document.write(arr.map((x)=>{
+    return x.fname + " " + x.lname + "<br>";
+}))
+    </script>
+   
+</body>
+</html>
