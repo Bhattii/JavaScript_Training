@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <script>
+let a = {
+    fname: "Muhammad",
+    lname: "Imran",
+age: 23,
+email: "imran5244513@gmail.com",
+movies: [
+    "sholay",
+    "dhom",
+    "hum"
+],
+living: {
+    city: "lodhran",
+    country: "Pakistan"
+},
+salary: function(salary){
+    return salary;
+},
+fullname: function(){
+    return this.fname + " " + this.lname;
+}
+}
+document.write(a.fname);
+document.write(' ' + a.lname + "<br>");
+document.write("movies: " + a.movies + "<br>");
+document.write(a.salary(25000) + "<br>");
+document.write(a.fullname() + "<br>");
+document.write(a.living.city);
+    </script>
+</body>
+</html>
