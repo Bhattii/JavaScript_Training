@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="outer" style="background-color: yellowgreen; font-weight: bold; padding: 50px; ">Outer
+        <div class="inner" style="background-color: rgb(207, 140, 64); padding: 40px; font-weight: bold; display: flex; gap: 10px;   ">Inner
+            <div class="a" style="padding: 30px; background-color: white;">a</div>
+            <div class="b" style="padding: 30px; background-color: white;">b</div>
+            <div class="c" id="c" style="padding: 30px; background-color: white;">c</div>
+            <div class="d" style="padding: 30px; background-color: white;">d</div>
+            <div class="e" style="padding: 30px; background-color: white;">e</div>
+        </div>
+    </div>
+
+    <script>
+let a = document.querySelector(".inner").children[0];
+ a = document.querySelector(".inner").childNodes;
+
+// a.style.backgroundColor="red";
+
+
+console.log(a);
+
+    </script>
+</body>
+</html>
