@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1 id="head">Muhammad Imran</h1>
+<button class="abc" id="id" style="margin-bottom: 30px;">click me</button>
+
+
+
+
+<div id="outer" style="background-color: red; width: 200px; height: 200px; position: relative;">
+    <div id="inner" style="background-color: green; width: 100px; height: 100px; position:absolute; bottom: 0; right: 0;"></div>
+</div>
+
+
+
+
+
+    <script>
+        //  document.getElementById("id").onclick = abc;
+        //  document.getElementById("id").onmouseenter = abc;
+
+        document.getElementById("id").addEventListener("click" , abc)
+        // document.getElementById("id").addEventListener("mouseenter" , ()=>{
+        //     document.getElementById("head").style.border = "10px solid green";
+        // }, )
+
+         function abc(){
+            document.getElementById("head").style.backgroundColor = "red";
+
+         }
+
+        document.querySelector("#inner").addEventListener('click', function(){
+            alert('inner div')
+        }, );
+        document.querySelector("#outer").addEventListener('click', function(){
+            alert('outer div');
+        }, );
+
+        document.querySelector("#id").removeEventListener('click', abc);
+
+        
+    </script>
+</body>
+</html>
