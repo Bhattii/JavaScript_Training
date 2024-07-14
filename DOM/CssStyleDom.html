@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="header" class="abc" style="color: red; border: 1px solid green;">Muhammad Imran</div>
+
+    <script>
+        // let element = document.querySelector("#header").style.border;
+        // document.querySelector("#header").style.backgroundColor = "tan";
+        // document.querySelector("#header").style.color = "blue";
+       
+        // document.querySelector("header").className = "abc";
+
+       let element =  document.querySelector("header").classList;
+        element =  document.querySelector("header").class;
+        element =  document.querySelector("header").classList.add("xyz");
+        element = document.querySelector("#header").classList.remove("abc");
+     
+
+        console.log(element);
+    </script>
+</body>
+</html>
