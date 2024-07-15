@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div style="width: 90%; height: 400px; background-color: rgb(224, 226, 75); padding: 20px;">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Recusandae cumque voluptas harum accusamus fugiat, praesentium at eaque ratione ab perspiciatis. Iusto culpa aperiam dolorem fugiat dolorum aut, quisquam ullam inventore?</p>
+        <div id="text"></div>
+    </div>
+    <script>
+
+// let newElement = document.createElement("h2");
+// let newText = document.createTextNode("This is just text");
+// newElement.appendChild(newText);
+// let targert = document.getElementById("text");
+// //  targert.insertAdjacentElement("beforebegin", newElement);
+//  targert.insertAdjacentElement("afterbegin", newElement);
+
+let targert = document.getElementById("text");
+let newElement = "<h2>This is Heading </h2>";
+// targert.insertAdjacentHTML("afterbegin", newElement);
+// targert.insertAdjacentHTML("afterend", newElement);
+targert.insertAdjacentHTML("afterbegin", newElement);
+
+ 
+    </script>
+</body>
+</html>
