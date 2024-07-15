@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="list">
+        <li>Banana</li>
+        <li>Orange</li>
+        <li>Apple</li>
+        <li>Strawberry</li>
+    </ul>
+    
+    <script>
+let newElement = document.createElement("li");
+let newText = document.createTextNode("Azan Ellahi");
+newElement.appendChild(newText);
+let targert = document.getElementById("list");
+let oldElement = targert.children[1];
+
+targert.replaceChild(newElement, oldElement);
+
+
+console.log(oldElement);
+    </script>
+</body>
+</html>
