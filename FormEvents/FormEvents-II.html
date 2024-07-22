@@ -8,7 +8,7 @@
 <body>
     <form action="" onsubmit="submitFunction()">
         <label for="name">Name</label>
-        <input type="text" name="name" id="" onchange="changeFunction(this)" onselect="selectFunctin()"><br><br>
+        <input type="text" name="name" id="" onchange="changeFunction(this)" onselect="selectFunctin()" oninvalid="alert('Please fill the form.')" required><br><br>
         <label for="class">Class</label>
         <input type="text" name="class" onchange="changeFunction(this)"><br><br>
 
