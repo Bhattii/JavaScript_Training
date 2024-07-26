@@ -26,7 +26,38 @@
 
 
 
-        
+        let n = "student";
+        const Person3 = {
+            [n + " name"]: "Muhammad Imran", //Property Name : student name
+            Course : "BS Computer Science"
+        };
+        console.log(Person3)
+
+
+        // Object Literals: New Function Syntax
+         const Person4 = {
+            name,
+            age,
+            nationality(){                  
+                return "Pakistani"
+            }
+        }
+        console.log(Person4.nationality());
+
+
+        // Return an Object 
+        let fname = "Muhammad";
+        let lname = "Imran";
+        const Person5 = (fname,lname,age)=>{
+            let fullName = fname +" "+lname;
+            return{fullName,age};
+
+        }
+        let s = Person5(fname,lname,age)
+        console.log(s);
+
+
+
 
     </script>
 </body>
