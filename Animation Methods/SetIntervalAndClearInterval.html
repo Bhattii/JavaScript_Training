@@ -22,14 +22,12 @@
         const Anim =()=>{
             a = a+10;
               if(a==1000){
-clearInterval(id);
+              clearInterval(id);
         }
         else{
               let target = document.getElementById("test");
             target.style.width = a+"px";
         }
-           
-          
             
         }
       let id = setInterval(Anim,100);
