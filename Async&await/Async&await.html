@@ -30,15 +30,30 @@
 
 
     //    Await 
-    async function test() {
-          console.log("2: Message")
-    await console.log("3: Message")
-          console.log("4: Message")
+    // async function test() {
+    //       console.log("2: Message")
+    // await console.log("3: Message")
+    //       console.log("4: Message")
+    // }
+    // console.log("1: Message")
+    // test();
+    // console.log("5: Message");
+
+
+
+    // CallBack Function 
+
+
+    function myDisplayer(a){
+     console.log(a);
     }
-    console.log("1: Message")
-    test();
-    console.log("5: Message");
     
+    function calculator(num1,num2,callback){
+        let sum = num1+num2;
+        callback(sum);
+    }
+
+    calculator(3,5,myDisplayer);
 
     </script>
 </body>
