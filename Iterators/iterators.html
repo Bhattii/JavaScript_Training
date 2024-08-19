@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iterators in JavaScript</title>
+</head>
+<body>
+    
+    <script>
+
+        let num = [100,200,300];
+
+        // console.log(num);
+
+        // console.log(typeof num[Symbol.iterator]());
+
+        let iter = num[Symbol.iterator]();
+        // console.log(iter);
+        // console.log(iter.next());
+        // console.log(iter.next());
+
+
+        // console.log(iter.next().value);
+        // console.log(iter.next().done);
+        
+        let result = iter.next();
+        while(!result.done){
+            console.log(result.value);
+            result = iter.next();
+        }
+
+    </script>
+</body>
+</html>
